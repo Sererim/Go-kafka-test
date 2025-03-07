@@ -142,7 +142,7 @@ func load_messages(filePath string) []Message {
 
 func print_messages(msg *sarama.ConsumerMessage) {
 	fmt.Printf("\nReceived message:\n")
-	fmt.Printf("Topic:     %s/n", msg.Topic)
+	fmt.Printf("Topic:     %s\n", msg.Topic)
 	fmt.Printf("Partition: %d\n", msg.Partition)
 	fmt.Printf("Offset:    %d\n", msg.Offset)
 	fmt.Printf("Key:       %s\n", string(msg.Key))
